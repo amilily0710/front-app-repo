@@ -16,7 +16,7 @@ import Box from '@mui/material/Box';
 function UpperPage() {
   const [data, setData] = useState({ outcome: [] });
 
-  const url = '{backend-ingress ADDRESS}/services/all';
+  const url = 'http://k8s-eksdemogroup-5c197d4149-1990673521.ap-northeast-2.elb.amazonaws.com/services/all';
 
   useEffect(() => {
     const fetchData = async () => {
